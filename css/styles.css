@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #0d9240;
+}
+
+h1 {
+    margin: 20px;
+    color: #191caf;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #14b18f;
+    border: 2px solid #520303;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#resetButton {
+    background-color: #191caf;
+    color: rgb(7, 172, 172);
+    border: #191caf;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resetButton:hover {
+    background-color: #0b9499; /* Un azul un poco más oscuro al pasar el mouse */
+    color: #fff; /* Cambia el texto a blanco */
+    border-color: #120899; /* Cambia el color del borde al pasar el mouse */
+}
+  
